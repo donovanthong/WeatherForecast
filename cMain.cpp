@@ -21,7 +21,7 @@ cMain::cMain() : wxFrame(nullptr, wxID_ANY, "Check Valid UEN")
 	temp4 += wxString::Format(" Year:%d ", mswTime.wYear);
 	temp4 += wxString::Format(" Month:%d ", mswTime.wMonth);
 	temp4 += wxString::Format(" Day:%d ", mswTime.wDay);
-	temp4 += wxString::Format(" Time:%d ", mswTime.wHour - 4);
+	temp4 += wxString::Format(" Time:%d ", mswTime.wHour);
 	temp4 += wxString::Format(":%d ", mswTime.wMinute);
 	temp4 += wxString::Format(":%d ", mswTime.wSecond);
 	showCurrentTime->SetLabel(temp4);
